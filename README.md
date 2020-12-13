@@ -21,15 +21,7 @@
 - Hoisting:
   - [JavaScript Hoisting 1](https://www.w3schools.com/js/js_hoisting.asp)
   - [JavaScript Hoisting 2](https://www.javascripttutorial.net/javascript-hoisting/)
-
-## Assignments:
-
-- **Read about Functions from Eloquent JavaScript Book:**
-  - Website Version: https://eloquentjavascript.net/03_functions.html
-  - PDF Version: https://eloquentjavascript.net/Eloquent_JavaScript.pdf
-  - Reading previous sections (recommended) will help you to understand that topics well. 
-- **Repeat JS fundamentals from this section: [JavaScript specials](https://javascript.info/javascript-specials).**
-- **Read sections from [Code quality](https://javascript.info/function-basics).**
+- **More about [Code quality](https://javascript.info/function-basics).**
   - [Debugging in Chrome](https://javascript.info/debugging-chrome)
     - [Best Debugging Tips For Beginners](https://youtu.be/gaminoBsQx0)
     - https://www.w3schools.com/js/js_debugging.asp
@@ -43,6 +35,16 @@
     - https://github.com/zloirock/core-js
     - https://polyfill.io/v3/
     - https://babeljs.io/
+
+## Assignments:
+
+- **Read about Functions from Eloquent JavaScript Book:**
+  - Website Version: https://eloquentjavascript.net/03_functions.html
+  - PDF Version: https://eloquentjavascript.net/Eloquent_JavaScript.pdf
+  - Reading previous sections (recommended) will help you to understand that topics well. 
+- **Repeat JS fundamentals from this section: [JavaScript specials](https://javascript.info/javascript-specials).**
+- **Read sections from [Code quality](https://javascript.info/function-basics).**
+
 - **Complete Tasks of today learned chapters from `javascript.info` website**
 - **Complete below shown exercises from [this link](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_variables1):**
     - Functions;
