@@ -1,190 +1,366 @@
-// let year = prompt("In which year was ECMAScript-2015 specification published?");
+// ask(
+// 	"Do you agree?",
+// 	function () {
+// 		alert("You agreed.");
+// 	},
+// 	function () {
+// 		alert("You canceled the execution.");
+// 	}
+// );
 
-// if (1) {
-// 	alert("You are right!");
-// }
+let newMessage = `New - Hello, I'm JavaScript!`;
 
-// if ("") {
-// 	alert("COVID-19");
-// 	alert("COVID-19");
-// 	alert("COVID-19");
-// 	alert("COVID-19");
-// 	alert("COVID-19");
-// 	alert("COVID-19");
-// 	alert("COVID-19");
-// 	alert("COVID-19");
-// 	alert("COVID-19");
-// 	let message = 'test'
+function showMessage() {
+	let student = "Adil";
+	// let message = "Hello, I'm JavaScript!"; // local variable
+	// alert(message);
+	// alert(newMessage);
+}
+
+alert(student);
+
+showMessage(); // Hello, I'm JavaScript!
+
+alert(message); // <-- Error! The variable is local to the function
+
+let userName = "John";
+let userName = "Bob";
+
+function showMessage() {
+	userName = "Bob"; // (1) changed the outer variable
+
+	let message = "Hello, " + userName;
+	alert(message);
+}
+
+// alert(userName); // John before the function call
+// alert(userName); // John before the function call
+// alert(userName); // John before the function call
+// alert(userName); // John before the function call
+// alert(userName); // John before the function call
+// showMessage(); // Hello Bob
+// alert(userName); // Bob, the value was modified by the function
+// alert(userName); // Bob, the value was modified by the function
+// alert(userName); // Bob, the value was modified by the function
+// alert(userName); // Bob, the value was modified by the function
+// alert(userName); // Bob, the value was modified by the function
+
+// let userName = "John";
+
+// function showMessage() {
+// 	userName = "Ramil";
+
+// 	let message = "Hello, " + userName; // Bob
 // 	alert(message);
 // }
 
-// let cond = (year == 2015); // equality evaluates to false or false
+// // // the function will create and use its own userName
+// showMessage();
 
-// if (cond) {
-// 	console.log('')
+// alert(userName); // John, unchanged, the function did not access the outer variable
+
+// let name = "ramil";
+// let message = "Hello";
+
+// function showMessage($, _, value, data, asdasd, dasddd) {
+// 	alert(`${_} ${$}`);
 // }
 
-// let year = prompt('In which year was the ECMAScript-2015 specification published?');
+// showMessage(name, message); // Ann: Hello! (*)
 
-// if (year == 2015) {
-//   alert( 'You guessed it right!' );
+// // showMessage();
+// // showMessage("Ramil"); // Ann: Hello! (*)
+// // showMessage("Kamran", "What's up?"); // Ann: What's up? (**)
+
+// function showMessage(from, text = "no text given", age = 18) {
+// 	alert(from + ": " + text + age);
+// }
+
+// showMessage("Ann", "Salam", 35); // Ann: no text given
+
+// function anotherFunction() {
+
+// 	return "Parametri gondermeyib"
+// }
+
+// function showMessage(from, text = anotherFunction()) {
+// 	alert(`${from}: ${text}`)
+// 	// anotherFunction() only executed if no text given
+// 	// its result becomes the value of text
+// }
+
+// showMessage("Ramil", "salam");
+// showMessage("Ramil");
+
+// function sum(a, b) {
+// 	return a + b;
+// }
+
+// alert(sum(1, 2)); // 3
+
+function checkAge(age) {
+	if (age >= 18) {
+		return true;
+	} else {
+		return confirm("Do you have permission from your parents?");
+	}
+}
+
+// let age = prompt("How old are you?", 18);
+
+// if (checkAge(age)) {
+// 	alert("Access granted");
 // } else {
-//   alert( 'How can you be so wrong?' ); // any value except 2015
+// 	alert("Access denied");
 // }
 
-// let year = prompt(
-// 	"In which year was the ECMAScript-2015 specification published?",
-// 	""
+// function showMovie(age) {
+// 	if (!checkAge(age)) {
+// 		return;
+// 	}
+// 	alert("Showing you the movie"); // (*)
+// }
+
+// showMovie()
+
+// function doNothing() {}
+
+// function doNothing() {
+// 	return null;
+// }
+
+// alert(doNothing() === undefined); // true
+
+// function showAge() {
+// 	if (age >= 18) {
+// 		return true;
+// 	} else {
+// 		return confirm("Do you have permission from your parents?");
+// 	}
+// }
+
+// function showMessage() {
+// 	alert();
+// }
+
+// function checkAndShowMessage(age, message) {
+// 	checkAge(12);
+// 	showMessage(message);
+// }
+
+// checkAndShowMessage(12, age);
+
+// function thisReturnsSomeLargeExpression() {
+// 	// return;
+// 	// some + long + expression + or + whatever * f(a) + f(b);
+// 	//
+// 	// let test = "test";
+// 	// prettier-ignore
+// 	return (
+// 		some + long + expression
+// 		+ or +
+// 		whatever * f(a) + f(b)
+// 		);
+// }
+
+// function name(parameters, delimited, by, comma) {
+
+// 	/* code */
+//   }
+
+// function checkAge(age) {
+// 	if (age > 18) {
+// 		return true;
+// 	} else {
+// 		return confirm("Did parents allow you?");
+// 	}
+// }
+
+// function checkAge(age) {
+// 	return age > 18 ? true : confirm("Did parents allow you?");
+// }
+
+// function checkAge(age) {
+// 	return age > 18 || confirm("Did parents allow you?");
+// }
+
+// function sayHi() {
+// 	// (1) create
+// 	alert("Hello");
+// 	return "Funksiya Chagrildi"
+// }
+
+// // // let func = sayHi; // (2) copy
+// // let func = sayHi; // (2) copy
+
+// // func(); // Hello     // (3) run the copy (it works)!
+// // sayHi(); // Hello    //     this still works too (why wouldn't it)
+
+// console.log(sayHi, "sayHi");
+// console.log(sayHi(), "sayHi()");
+
+// function checkAge(age) {
+// 	return age > 18 || confirm("Did parents allow you?");
+// }
+
+// let sayHi = function () {
+// 	// ...
+// };
+
+// let salam = "Text";
+
+// function showOk() {
+// 	alert("You agreed.");
+// }
+
+// function showCancel() {
+// 	alert("You canceled the execution.");
+// }
+
+// usage: functions showOk, showCancel are passed as arguments to ask
+// ask("Do you agree?", showOk, showCancel);
+
+// let ask = function (question, yes, no) {
+// 	if (confirm(question)) {
+// 		yes();
+// 	} else {
+// 		no();
+// 	}
+// };
+
+// ask()
+
+// let age = prompt("What is your age?", 18);
+
+// const welcome = function () {
+// 	alert("Hello!");
+// };
+
+// function welcome() {
+// 	alert("Hello!");
+// }
+
+// // conditionally declare a function
+// if (age < 18) {
+// 	welcome();
+// } else {
+// 	welcome();
+// }
+
+// // ...use it later
+// welcome(); // Error: welcome is not defined
+
+// let age = prompt("What is your age?", 18);
+// // prettier-ignore
+// let welcome = (age < 18) ? function() { alert("Hello!"); } : function() { alert("Greetings!"); };
+
+// welcome(); // ok no
+
+// let func = function (arg1, arg2, ...argN) {
+// 	return expression;
+// };
+
+// let func = (arg1, arg2, ...argN) => expression;
+
+// let sum = function (a, b) {
+// 	return a + b;
+// };
+
+// let sum = (a, b) => a + b;
+
+// alert(sum(1, 2)); // 3
+
+// let double = (n) => n * 2;
+// // roughly the same as: let double = function(n) { return n * 2 }
+
+// alert(double(13)); // 6
+
+// let age = prompt("What is your age?", 18);
+
+// let welcome = age < 18 ? () => alert("Hello") : () => alert("Greetings!");
+// let welcome =
+// 	age < 18
+// 		? function () {
+// 				return alert("Hello");
+// 		  }
+// 		: function () {
+// 				return alert("Greetings!");
+// 		  };
+
+// welcome();
+
+// let sum = (a, b) => a + b;
+
+// let sum = (a, b) => {
+// 	let result = a + b;
+// 	result += 10;
+// 	return result; // if we use curly braces, then we need an explicit "return"
+// };
+
+// function ask(question, yes, no) {
+// 	if (confirm(question)) yes();
+// 	else no();
+// }
+
+// if (condition) {
+// 	// do this
+// 	// ...and that
+// 	// ...and that
+// }
+
+// ask(
+// 	"Do you agree?",
+// 	function () {
+// 		alert("You agreed.");
+// 	},
+// 	function () {
+// 		alert("You canceled the execution.");
+// 	}
 // );
 
-// if (year < 2015) {
-// 	alert("Too early...");
-// } else if (year > 2015) {
-// 	alert("Too late");
-// } else if (year > 20125) {
-// 	alert("Too late");
-// } else if (year > 203215) {
-// 	alert("Too late");
-// } else if (year > 202315) {
-// 	alert("Too late");
-// } else if (year > 20235) {
-// 	alert("Too late");
-// }
+// const ask = (question, yes, no) => (confirm(question) ? yes() : no());
 
-// let accessAllowed;
-// let age = prompt('How old are you?', '');
-// if (age > 18) {
-//   accessAllowed = true;
-// } else {
-//   accessAllowed = false;
-// }
-// alert(accessAllowed);
+// ask(
+// 	"Do you agree?",
+// 	() => alert("You agreed."),
+// 	() => alert("You canceled the execution.")
+// );
 
-// let age = prompt('How old are you?', '');
+// const user = {
+// 	name: "Ramil",
+// 	age: 23,
+// 	age: [],
+// 	sizes: {
+// 		height: 177,
+// 		age: {
+// 			ingter: {
 
-// let accessAllowed = (age > 18) ? true : false;
-// let accessAllowed = age > 18;
+// 			}
+// 		}
+// 	},
+// 	teaching: () => alert("Teaching"),
 
-// alert(accessAllowed);
+// 	learning: function () {
+// 		alert("learning");
+// 	},
+// };
 
-// let age = prompt("age?", 18);
+const user = {
+	name: "Ramil",
+	age: 23,
+};
 
-// // prettier-ignore
-// let message = (age < 3)   ? 'Hi, baby!' :
-//   			  (age < 18)  ? 'Hello!' :
-//   			  (age < 100) ? 'Greetings!' :
-//   							'What an unusual age!';
+console.log();
 
-// let message =
-// 	age < 3
-// 		? "Hi, baby!"
-// 		: age < 18
-// 		? "Hello!"
-// 		: age < 100
-// 		? "Greetings!"
-// 		: "What an unusual age!";
+// const user = {};
 
-// // prettier-ignore
-// let message = age < 3 ? "Hi, baby!" : age < 18 ? "Hello!" : age < 100 ? "Greetings!" : "What an unusual age!";
+// user.name = "Ramil";
+// user.age = 23;
 
-// alert(message);
+let user = {
+	name: "John",
+	age: 30,
+	"likes birds": true, // multiword property name must be quoted
+};
 
-// Our eyes scan the code vertically. Code blocks which span several lines are easier to understand than a long, horizontal instruction set.
-// let company = prompt("Which company created JavaScript?", "");
-
-// company == "Netscape" ? alert("Right!") : alert("Wrong.");
-
-// if (company == "Netscape") {
-// 	alert("Right!");
-// } else {
-// 	alert("Wrong.");
-// }
-
-// let correctJSName = prompt("What is the “official” name of JavaScript?");
-
-// if (correctJSName === "ECMAScript") {
-// 	alert("Right!");
-// } else {
-// 	alert("Didn’t know? ECMAScript!");
-// }
-
-// let number = prompt("Add number");
-
-// if (number >= 1) {
-// 	alert("value is greater than zero");
-// } else if (number <= -1) {
-// 	alert("value is less than zero");
-// } else if (number == 0) {
-// 	alert("value equals zero");
-// } else {
-// 	alert("Something went wrong!");
-// }
-
-// const result =
-// 	false || false || false || false || false || false || false || true;
-
-// if (null || 0) {
-// 	// works just like if( true || false )
-// 	alert("truthy!");
-// }
-
-// alert(1 || 0); // 1 (1 is truthy)
-
-// alert(null || 1); // 1 (1 is the first truthy value)
-// alert(null || 0 || 1); // 1 (the first truthy value)
-
-// alert(undefined || null || 0); // 0 (all falsy, returns the last value)
-
-// let firstName = "";
-// let lastName = "";
-// let nickName = "";
-
-// // alert( firstName || lastName || nickName || 0 || "Ramil" ||  "Anonymous"); // SuperCoder
-// // alert( "salam" || lastName || nickName || 0 || "Ramil" ||  "Anonymous"); // SuperCoder
-// alert(firstName || lastName || nickName || alert('test') || "Ramil" || "Anonymous"); // SuperCoder
-
-// let hour = 12;
-// let minute = 30;
-
-// if (true || false) {
-// 	alert("The time is 12:30");
-// }
-
-// if (true || false || true || false) {
-// 	alert("The time is 12:30");
-// }
-
-// if (true && true && true && true && true) {
-// 	alert("The time is 12:30");
-// }
-
-// let i = 3;
-
-// while () {
-// 	alert(i);
-// 	i--;
-// }
-
-// do {
-// 	// loop body
-//   } while (condition);
-
-// let i = 0;
-// for (; i < 3; i * 10) {
-// 	alert(i);
-// }
-
-// alert(i);
-
-let a = 4;
-
-switch (a) {
-	case 2:
-	case 3:
-	case 4:
-	case 5:
-		alert("Too large");
-		break;
-	default:
-		alert("I don't know such values");
-}
+// user.likes birds
