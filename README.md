@@ -24,6 +24,10 @@
 
 ## Assignments:
 
+- **Read about Functions from Eloquent JavaScript Book:**
+  - Website Version: https://eloquentjavascript.net/03_functions.html
+  - PDF Version: https://eloquentjavascript.net/Eloquent_JavaScript.pdf
+  - Reading previous sections (recommended) will help you to understand that topics well. 
 - **Repeat JS fundamentals from this section: [JavaScript specials](https://javascript.info/javascript-specials).**
 - **Read sections from [Code quality](https://javascript.info/function-basics).**
   - [Debugging in Chrome](https://javascript.info/debugging-chrome)
@@ -43,9 +47,8 @@
 - **Complete below shown exercises from [this link](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_variables1):**
     - Functions;
     - Objects;
-- **Watch below shown section from this tutorial: https://youtu.be/W6NZfCO5SIk **
+- **Watch below shown section from this tutorial:** https://youtu.be/W6NZfCO5SIk
     - 30:06 Objects
-    - 35:22 Arrays
     - 39:41 Functions
     - 44:22 Types of Functions 
 
