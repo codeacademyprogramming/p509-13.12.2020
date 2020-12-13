@@ -1,52 +1,55 @@
-# Front-End Lesson 11, JS - Homework (12.12.2020)
+# Front-End Lesson 12, JS - Homework (13.12.2020)
 
 ## Lessons topics:
 
 1. **JavaScript Fundamentals:**
-   - [Comparisons](https://javascript.info/comparison)
-   - [Conditional branching: if, '?'](https://javascript.info/ifelse)
-   - [Logical operators](https://javascript.info/logical-operators)
-   - [Nullish coalescing operator '??'](https://javascript.info/nullish-coalescing-operator)
-   - [Loops: while and for](https://javascript.info/while-for)
-   - [The "switch" statement](https://javascript.info/switch)
+   - [Functions](https://javascript.info/function-basics)
+     - https://www.w3schools.com/js/js_functions.asp
+     - https://www.w3schools.com/js/js_function_definition.asp
+     - https://www.w3schools.com/js/js_function_parameters.asp
+     - https://www.w3schools.com/js/js_function_invocation.asp
+   - [Function expressions](https://javascript.info/function-expressions)
+   - [Arrow functions, the basics](https://javascript.info/arrow-functions-basics)
+     - https://www.w3schools.com/js/js_arrow_function.asp
+   - [Objects](https://javascript.info/object)
+     - https://www.w3schools.com/js/js_objects.asp
+     - https://www.w3schools.com/js/js_object_definition.asp
+     - https://www.w3schools.com/js/js_object_properties.asp
 
 ## Articles:
 
-- [JavaScript Comparison and Logical Operators](https://www.w3schools.com/js/js_comparisons.asp)
-- [Expressions and operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
-- [Equality comparisons and sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
-- [Loops and iteration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
-- [JavaScript For Loop](https://www.w3schools.com/js/js_loop_for.asp)
-- [JavaScript Loops Explained: For Loop, While Loop, Do...while Loop, and More](https://www.freecodecamp.org/news/javascript-loops-explained-for-loop-for/)
-- [Expressions and operators by category](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)
+- Hoisting:
+  - [JavaScript Hoisting 1](https://www.w3schools.com/js/js_hoisting.asp)
+  - [JavaScript Hoisting 2](https://www.javascripttutorial.net/javascript-hoisting/)
 
 ## Assignments:
 
+- **Repeat JS fundamentals from this section: [JavaScript specials](https://javascript.info/javascript-specials).**
+- **Read sections from [Code quality](https://javascript.info/function-basics).**
+  - [Debugging in Chrome](https://javascript.info/debugging-chrome)
+    - [Best Debugging Tips For Beginners](https://youtu.be/gaminoBsQx0)
+    - https://www.w3schools.com/js/js_debugging.asp
+  - [Coding Style](https://javascript.info/coding-style)
+    - [Airbnb JS Code Style](https://github.com/airbnb/javascript#types)
+    - [JavaScript Style Guide](https://www.w3schools.com/js/js_conventions.asp)
+  - [Comments](https://javascript.info/comments)
+  - [Ninja code](https://javascript.info/ninja-code)
+    - [JavaScript Best Practices](https://www.w3schools.com/js/js_best_practices.asp)
+  - [Polyfills and transpilers](https://javascript.info/polyfills)
+    - https://github.com/zloirock/core-js
+    - https://polyfill.io/v3/
+    - https://babeljs.io/
 - **Complete Tasks of today learned chapters from `javascript.info` website**
 - **Complete below shown exercises from [this link](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_variables1):**
-    - Variables;
-    - Operators;
-    - Data Types; 
-    - Strings;
-    - Comparisons;
-    - Conditions;
-    - Switch;
-    - For Loops;
-    - While Loops;
-    - Break Loops;
-- **Watch below shown section from this tutorial: https://youtu.be/W6NZfCO5SIk**
-  - 00:00 What is JavaScript
-  - 04:41 Setting Up the Development Environment 
-  - 07:52 JavaScript in Browsers
-  - 11:41 Separation of Concerns
-  - 13:47 JavaScript in Node
-  - 16:11 Variables
-  - 21:49 Constants
-  - 23:35 Primitive Types 
-  - 26:47 Dynamic Typing 
+    - Functions;
+    - Objects;
+- **Watch below shown section from this tutorial: https://youtu.be/W6NZfCO5SIk **
+    - 30:06 Objects
+    - 35:22 Arrays
+    - 39:41 Functions
+    - 44:22 Types of Functions 
 
 ## Some useful resources:
 
-- JS Comparison Table - https://dorey.github.io/JavaScript-Equality-Table/
 - [MDN JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [W3School - JavaScript Tutorial](https://www.w3schools.com/js/default.asp)
